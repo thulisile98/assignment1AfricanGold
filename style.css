@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background-image: url(images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+
+}
+
+.banner_text {
+    text-align: center;
+    color: black;
+    padding-top: 180px;
+}
+
+.banner_text h1 {
+    font-size: 130px;
+}
+
+.banner_text p {
+    font-size: 30px;
+    font-style: italic;
+
+}
