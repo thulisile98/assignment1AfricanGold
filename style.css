@@ -14,14 +14,13 @@
 .logo {
     width: 140px;
     position: absolute;
-    top: 4%;
+    top: 1%;
     left: 2%;
-
 }
 
 .banner_text {
     text-align: center;
-    color: black;
+    color: white;
     padding-top: 180px;
 }
 
@@ -31,9 +30,8 @@
 }
 
 .banner_text p {
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic;
-
 }
 
 .banner-button {
@@ -42,7 +40,6 @@
 }
 
 .banner-button a {
-
     text-decoration: none;
     display: inline-block;
     width: 150px;
@@ -82,9 +79,14 @@
     top: 0;
     background: #a96f01e1;
     z-index: 2;
+    display: none;
 }
 
-nav ul li {
+#menu-toggle:checked~#navbar {
+    display: block;
+}
+
+nav ul {
     list-style: none;
     margin: 50px 20px;
 }
@@ -92,4 +94,204 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #a96f01e1;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+}
+
+#menu-toggle:checked~#navbar {
+    display: block;
+}
+
+#navbar label#menu-close-label {
+    display: none;
+}
+
+#menu-toggle:checked~#navbar label#menu-close-label {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 5px;
+    background: #a96f01e1;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+
+    #menu-toggle-label {
+        display: block;
+    }
+
+    #menu-toggle:checked~#navbar {
+        display: block;
+    }
+
+    #menu-toggle:checked~#menu-toggle-label {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #navbar {
+        display: block;
+        width: auto;
+        height: 50px;
+        position: static;
+        background: none;
+        z-index: 1;
+        font-size: 20px;
+        background: grey;
+    }
+
+    #navbar nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: grey;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+        background: grey;
+    }
+
+    #navbar li {
+        margin: 0 20px;
+    }
+
+    #navbar li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+@media screen and(max-width:770px) {
+    .banner_text h1 {
+        font-size: 44px;
+    }
+
+    .banner-button a {
+        display: block;
+        margin: 20px auto;
+    }
+
+}
+
+#feature {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text h1 {
+    font-size: 50px;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: #a96f01e1;
+    z-index: 1;
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.title-text p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#a96f01e1, #fff);
+    position: absolute;
+    top: -20;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.feature-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #a96f01e1;
+}
+
+.features-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img {
+    width: 70%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.features-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-text p {
+    padding: 0 20px;
+    text-align: initial;
+}
+
+.features-icon .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    border: 1px solid #a96f01e1;
+    color: #a96f01e1;
+
 }
