@@ -256,6 +256,7 @@ nav ul li a {
     margin: auto;
 }
 
+
 .features h1 {
     text-align: left;
     margin-bottom: 10px;
@@ -439,4 +440,82 @@ hr {
 
 .btn:active {
     background-color: #003380;
+}
+
+.testmonies-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.testmonies-img img {
+    width: 70%;
+    border-radius: 40px;
+    height: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#Testimonies {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.testimonies-box {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonies-desc h1 {
+    font-size: 50px;
+}
+
+.testimonies-desc p {
+    margin: auto;
+    font-size: 20px;
+    color: #a96f01e1;
+    z-index: 1;
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.testimonies-desc p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#a96f01e1, #fff);
+    position: absolute;
+    top: -20;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    left: 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #000;
 }
