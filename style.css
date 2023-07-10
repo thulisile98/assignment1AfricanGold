@@ -217,8 +217,7 @@ nav ul li a {
 #feature {
     width: 100%;
     padding: 70px 0;
-    background: radial-gradient(rgba(115, 112, 112, 0.5),
-            #f6a350e1);
+    background: white;
 }
 
 .title-text {
@@ -331,8 +330,7 @@ nav ul li a {
 #card {
     width: 100%;
     padding: 70px;
-    background: radial-gradient(rgba(115, 112, 112, 0.5),
-            #f6a350e1);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #794f00e1);
 }
 
 .card-box {
